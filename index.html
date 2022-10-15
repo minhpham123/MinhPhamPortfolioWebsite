@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minh Pham Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/333d0a5ded.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Minh Pham-1 (2).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Scientist / Analyst</p>
+            <h1> Hi, I'm <span> Minh Pham </span> <br> From Garden Grove, CA</h1><br> <p>I made this website using Html, CSS, and Java Script</p>
+        </div>
+    </div>
+</div>
+
+<!-----------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG_2245.JPG" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a recent graduate from the University of California, Santa Barbara with a Bachelors of Science in Statistics & Data Science. I am currently seeking an entry-level Data Scientist/Analyst position in which I can apply my gained academic knowledge to real life projects. I am an eager learner and would love to learn new skillsets that are applicable to data.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Advanced: RStudio, Python(Pandas,Numpy)<br> Intermediate: SAS, SQL(MySQL), Latex, Excel, HTML, CSS, JavaScript, Git</li>
+                        <li><span>Statistics and Probability</span><br>Hypothesis Testing, Bayesian/Frequentist Data Analysis, Time Series Analysis, Data Visualization, Mathematics, Nonparametric Statistics, and Statistical Analysis</li>
+                        <li><span>Machine Learning:</span><br>Supervised Learning : Linear/Logistic/Lasso/Ridge Regression, K-nn, Decision Trees, QDA, LDA, Random Forest<br>Unsupervised Learning : Support Vector Machine, Neural Network</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>University of California Santa Barbara : Technical Support<br> September 2021 - March 2022 <br></span>Upheld maximum organization by properly sorting orders and inventory on a database containing over 4000 Professors and TAs <br> Responsible for day-to-day front desk operations for providing media and classroom equipment to UCSB faculty and organizations, as well as technical support for computers and other equipment for 100+ classrooms <br>  Set up and broke down equipment for client events and supervised functionality of equipment during events</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of California Santa Barbara</span><br>September 2018 - June 2022<br> Bachelors of Science in Statistics and Data Science, Cumulative GPA: 3.33<br> <span>Applicable Classes: </span> Machine Learning, Statistical Data Science, Probablity and Statistics (A, B, and C), Regression
+                            Analysis, SAS Base Programming, C++, Python, Bayesian Data Analysis, Time Series Analysis, Nonparametric
+                            Statistics, Design of Experiments</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>IBM Data Science Certificate From Coursera</span><br>Currently Pursuing<br> From July to Present Day</li>
+                    </ul>
+                </div>
+            </div>                
+        </div>
+    </div>
+</div>
+
+<!--------Portfolio--------->
+
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work1.jpg">
+                <div class="layer">
+                    <h3>Machine Learning Project on Education and Poverty</h3>
+                    <p>- Lead a team to clean and analyze two data sets : Census (3142 rows with 31 features) and Education (3143 rows with 42 features) in R markdown<br> - Performed binary classification of Poverty feature (using multiple R libraries) and compared the results from multiple machine learning models
+                        and concluded that employment was the most important factor in determining the state of poverty within a given area
+                        followed by skin color <br> - Conducted PCA / clustering with complete linkage for dimensionality reduction of datasets and created dendrograms
+                        for visualization</p>
+                    <a href="https://github.com/minhpham123/MachineLearningProject/blob/main/MachineLearning-Project-MinhPham.pdf" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.jpg">
+                <div class="layer">
+                    <h3>Time Series Forecasting of Beer Production in Australia</h3>
+                    <p>- Performed transformations and decomposition of a dataset containing 154 observations in order to achieve stationarity
+                        and invertibility of time series data <br>
+                        - Found candidate SARIMA models and performed diagnostic testing of candidate SARIMA models by using various
+                        graphs (QQ-plots, ACF, PACF) and tests (Shapiro-Wilk, Box-Pierce, Box-Ljung, Mcleod-li / checking for roots) and
+                        concluded that beer production will continue to play a huge role in Australia’s economy due to the forecast showing
+                        that beer production in Australia inherently increases each yea</p>
+                    <a href="https://github.com/minhpham123/TimeSeriesForecastingProject/blob/main/Minh-Pham-TimeSeries-Forecasting-project.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------ contact -------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> mtp.tan.pham@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 714-925-9026</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/minh-tan-pham/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/minhpham123" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Resume (11).pdf" download class="btn">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name", placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-400px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyHAIXn1Pfmof-JNcllpG_RQyJdH-z_55st25ePG-fy_KY0HIohzuxasKJnkYTd6GON/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+ </script>
+
+</body>
+</html>
